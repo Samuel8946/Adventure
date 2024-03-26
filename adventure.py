@@ -1,7 +1,12 @@
 import random
 
-# Ask player for name
+
 def main():
+    player()
+
+
+def player():
+    # Ask player for name
     playerName = input("What is your name Great Adventurer? ").title().strip()
     name_length = len(playerName)
 
@@ -15,6 +20,7 @@ def main():
             print(f"What a unique name you have. {playerName}")
             break
     
+    # Player's gender and age
     playerGender = input("Now are you a Boy or a Girl? ").lower()
     playerAge = ""
         
@@ -33,7 +39,17 @@ def main():
             quit()
         else:
             print(f"Manificent {playerName}. Welcome to the world of GIFFILDORE!! A wonderful adventure awaits.")
-            break
+            break 
+
+    status = {
+        "Name": playerName,
+        "Age": playerAge,
+        "Gender": playerGender,
+        "HP": 10,
+        "Lives": 3,
+    }
+
+    print(status)
 
 
 main()

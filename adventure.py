@@ -1,8 +1,50 @@
 import random
+import time
+import os
 
 
 def main():
-    player()
+    
+    adventure(player())
+
+def adventure(commands):
+    # Location is Giffildore, You are trap in a cave with no end in sight, Suddenly you spot 2 items on the ground which one will you pick?
+    pass
+    #choice = input("You are trap in a cave with no end in sight, Suddenly you spot 2 items on the ground which one will you pick? ")
+    
+
+# Create the adventure
+
+
+# Count how many times the player dies
+
+
+
+
+# Decision: Left or Right? choose left you die from picking up a poisonous snake. right and you pick up pooop. your face is filled with disgust,
+# You graze your DISGUSTING hand against the wall trying to find a way out, then 3 path ways appeared, Where will you go?
+# Decision: Middle, Left or Right? Middle is Death from falling. Every bone in your body is fractured as you lose lots of blood slowly dying. Left, You find a bunch of man eating dog and die from heart attack. Right, you live but your determination slowly diminishes more and more. WIll anything be remained?
+# While walking down the cave to see something shining in the distance, you run to it not knowing something is lurking behind you.
+#   5 SECONDS TO TYPE DOCK, if failed they died from getting their head choped off else you docked and there is a weird deranged person with an axe in there hand will you fight or run? if they fight say "wow you fought bear handed against a man with an axe. what did you expect to happen." if they run "you decided to run and run and you see the light U HAVE ESCAPE THE CAVE."
+# YOU WIN
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 def player():
@@ -39,6 +81,11 @@ def player():
             quit()
         else:
             print(f"Manificent {playerName}. Welcome to the world of GIFFILDORE!! A wonderful adventure awaits.")
+            time.sleep(3) 
+            os.system("cls")
+            print("loading...")
+            time.sleep(4)
+            os.system("cls")
             break 
 
     status = {
@@ -48,24 +95,12 @@ def player():
         "HP": 10,
         "Lives": 3,
     }
+    print("Your Stats\n")
+    for stats in status:
+        print(stats, status[stats], sep=": ")
 
-    print(status)
+    
 
 
 main()
 
-
-# Create the adventure
-
-
-# Count how many times the player dies
-
-
-
-# Location is Giffildore, You are trap in a cave with no end in sight, Suddenly you spot 2 items on the ground which one will you pick?
-# Decision: Left or Right? choose left you die from picking up a poisonous snake. right and you pick up pooop. your face is filled with disgust,
-# You graze your DISGUSTING hand against the wall trying to find a way out, then 3 path ways appeared, Where will you go?
-# Decision: Middle, Left or Right? Middle is Death from falling. Every bone in your body is fractured as you lose lots of blood slowly dying. Left, You find a bunch of man eating dog and die from heart attack. Right, you live but your determination slowly diminishes more and more. WIll anything be remained?
-# While walking down the cave to see something shining in the distance, you run to it not knowing something is lurking behind you.
-#   5 SECONDS TO TYPE DOCK, if failed they died from getting their head choped off else you docked and there is a weird deranged person with an axe in there hand will you fight or run? if they fight say "wow you fought bear handed against a man with an axe. what did you expect to happen." if they run "you decided to run and run and you see the light U HAVE ESCAPE THE CAVE."
-# YOU WIN

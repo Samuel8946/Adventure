@@ -8,8 +8,20 @@ def main():
     adventure(player())
 
 def adventure(commands):
-    # Location is Giffildore, You are trap in a cave with no end in sight, Suddenly you spot 2 items on the ground which one will you pick?
-    pass
+    # Location is Giffildore
+    adventure = input("You are trap in a cave with no end in sight, Suddenly you spot 2 items on the ground which one will you pick, left or right? ").lower()
+    while True:
+        if "left" != adventure != "right":
+            adventure = input("Adventure type left or right: ")
+        elif adventure == "left":
+            print("You Died! From a poisonous snake ")
+            quit()
+        elif adventure == "right":
+            os.system('cls')
+            print(f"You picked up poop -_-")
+            {time.sleep(2)}            
+            print("annnnnnnnnddd your face is filled with disgust")
+            break
     #choice = input("You are trap in a cave with no end in sight, Suddenly you spot 2 items on the ground which one will you pick? ")
     
 
@@ -27,23 +39,6 @@ def adventure(commands):
 # While walking down the cave to see something shining in the distance, you run to it not knowing something is lurking behind you.
 #   5 SECONDS TO TYPE DOCK, if failed they died from getting their head choped off else you docked and there is a weird deranged person with an axe in there hand will you fight or run? if they fight say "wow you fought bear handed against a man with an axe. what did you expect to happen." if they run "you decided to run and run and you see the light U HAVE ESCAPE THE CAVE."
 # YOU WIN
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -95,7 +90,7 @@ def player():
         "HP": 10,
         "Lives": 3,
     }
-    print("Your Stats\n")
+    print("Your Stats")
     for stats in status:
         print(stats, status[stats], sep=": ")
 

@@ -22,22 +22,35 @@ def adventure(commands):
             {time.sleep(2)}            
             print("annnnnnnnnddd your face is filled with disgust")
             time.sleep(2)
+            os.system('cls')
             break
     
-    adventure = input("You graze your DISGUSTING hand against the wall trying to find a way out, then 3 path ways appeared, Where will you go? left, right or straight ").lower()
+    adventure = input("You graze your DISGUSTING hand against the wall trying to find a way out, then 3 path ways appeared, Where will you go? left, right or straight: ").lower()
+
     while True:
-        if "left" != adventure != "right" or adventure != "straight":
+        if "left" != adventure != "right" and adventure != "straight":
             adventure = input("Adventure type left, right or straight: ")
         elif adventure == "right":
             os.system('cls')
             print("You Fell into a trap and Died! Bones broken, head crushed, body twitching, truly an awful death :) ")
             quit()
-        elif adventure == "right":
+        elif adventure == "left":
             os.system('cls')
-            print(f"You picked up poop -_-")
+            print(f"You find a bunch of man eating dog and died")
             {time.sleep(2)}            
-            print("annnnnnnnnddd your face is filled with disgust")
-            time.sleep(2)
+            adventure = input("Will you play again? Yes or No, I'm trash :( ").lower()
+            while True:
+                if "yes" != adventure != "no":
+                    print("Ok since you wont type what I want you to type, START OVER")
+                    quit()
+                elif adventure == "yes":
+                    break
+                elif adventure == "no":
+                    print("Well bye-bye :)")
+            
+        elif adventure == "straight":
+            input("YOU LIVE but your determination slowly diminishes more and more. WIll anything be remained? ")
+            print("I don't care about your answer :). You'll die if you don't keep moving.")
             break
 
     #choice = input("You are trap in a cave with no end in sight, Suddenly you spot 2 items on the ground which one will you pick? ")

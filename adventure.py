@@ -21,7 +21,25 @@ def adventure(commands):
             print(f"You picked up poop -_-")
             {time.sleep(2)}            
             print("annnnnnnnnddd your face is filled with disgust")
+            time.sleep(2)
             break
+    
+    adventure = input("You graze your DISGUSTING hand against the wall trying to find a way out, then 3 path ways appeared, Where will you go? left, right or straight ").lower()
+    while True:
+        if "left" != adventure != "right" or adventure != "straight":
+            adventure = input("Adventure type left, right or straight: ")
+        elif adventure == "right":
+            os.system('cls')
+            print("You Fell into a trap and Died! Bones broken, head crushed, body twitching, truly an awful death :) ")
+            quit()
+        elif adventure == "right":
+            os.system('cls')
+            print(f"You picked up poop -_-")
+            {time.sleep(2)}            
+            print("annnnnnnnnddd your face is filled with disgust")
+            time.sleep(2)
+            break
+
     #choice = input("You are trap in a cave with no end in sight, Suddenly you spot 2 items on the ground which one will you pick? ")
     
 

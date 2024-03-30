@@ -37,7 +37,7 @@ def adventure(commands):
         elif adventure == "left":
             os.system('cls')
             print(f"You find a bunch of man eating dog and died")
-            {time.sleep(2)}            
+            time.sleep(2)            
             adventure = input("Will you play again? Yes or No, I'm trash :( ").lower()
             while True:
                 if "yes" != adventure != "no":
@@ -51,6 +51,22 @@ def adventure(commands):
         elif adventure == "straight":
             input("YOU LIVE but your determination slowly diminishes more and more. WIll anything be remained? ")
             print("I don't care about your answer :). You'll die if you don't keep moving.")
+            time.sleep(2)
+            os.system('cls')
+            break
+
+    print("Finally you feel like you are near you journey, but there is one last thing you must do")
+    time.sleep(2)
+    adventure = input("left or right: ").lower()
+    while True:
+        if "left" != adventure != "right":
+            adventure = input("Done with games left or right: ")
+        elif adventure == "left" or adventure =="right":
+            os.system('cls')
+            print("You ESCAPED THE CAVE CONGRATS :)")
+            time.sleep(1)
+            print("YOU WIN")
+            os.system('pause')
             break
 
     #choice = input("You are trap in a cave with no end in sight, Suddenly you spot 2 items on the ground which one will you pick? ")
@@ -113,20 +129,6 @@ def player():
             time.sleep(4)
             os.system("cls")
             break 
-
-    status = {
-        "Name": playerName,
-        "Age": playerAge,
-        "Gender": playerGender,
-        "HP": 10,
-        "Lives": 3,
-    }
-    print("Your Stats")
-    for stats in status:
-        print(stats, status[stats], sep=": ")
-
-    
-
 
 main()
 

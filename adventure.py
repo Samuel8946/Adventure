@@ -4,7 +4,7 @@ import os
 
 
 def main():
-    
+    # Create the adventure
     adventure(player())
 
 def adventure(commands):
@@ -72,7 +72,7 @@ def adventure(commands):
     #choice = input("You are trap in a cave with no end in sight, Suddenly you spot 2 items on the ground which one will you pick? ")
     
 
-# Create the adventure
+
 
 
 # Count how many times the player dies

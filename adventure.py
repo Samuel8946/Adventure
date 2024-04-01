@@ -56,6 +56,7 @@ def adventure(commands):
                     break
                 elif adventure == "no":
                     print("Well bye-bye :)")
+                    quit()
             
         elif adventure == "straight":
             input("YOU LIVE but your determination slowly diminishes more and more. WIll anything be remained? ")
